@@ -1,12 +1,495 @@
-.flex {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.Conteudo{
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.flex-row {
+#IMC{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
-.input-text {
+.Agrupamento-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 25vh;
+}
+
+.Agrupamento-inputs input{
+    width: calc(100% - 20px); 
+    height: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #BDBDBD;
     background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+    border-style: solid;
+    border-color: #E8E8E8;
+}
+
+.checkbox{
+    width: 85vw;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.checkbox input {
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+}
+
+.agrupamento-botoes{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 30vh;
+    margin-top: 15px;
+}
+
+.agrupamento-botoes button {
+    width: 85vw;
+    height: 51px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#Calcular{
+    background-color: #45FEFE;
+    border: none;
+}
+
+#Entenda{
+    background-color: white;
+    border: solid;
+    border-color: #45FEFE;
+    border-width: 4px;
+}
+
+.Conteudo_Historico{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Logo{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.borda-imagem{
+    width: 95px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #45FEFE;
+    border-radius: 20px;
+}
+
+#Label_Historico{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.Pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+#Pesquisar{
+    width: 343px;
+    height: 50px;
+    border: solid 1px;
+    border-radius: 100px;
+    border-color: #E8E8E8;
+    background: #F6F6F6;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 15px;
+    color: #BDBDBD;
+}
+
+.Historico-1{
+    width: 340px;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.Quadrado{
+    width: 50px;
+    height: 50px;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+}
+
+.Div_His{
+    width: 280px;
+}
+
+.Div_His hr{
+    border: 1px solid #E8E8E8;
+}
+
+.Div_His p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.Peso{
+    width: 270px;
+    height: 20px;
+    display: flex;
+    flex-direction: end;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#Label-peso {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#Label-tempo {
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+
+.conteudo-login{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2E1462;
+}
+
+.login-agrupamento {
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+}
+
+.logo-login {
+    background-color: white;
+    border: 3px solid #45FEFE;
+    border-radius: 20px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+#imagem-login{
+    width: 70px;
+    height: 70px;
+}
+
+.faca-login{
+    width: 239px;
+    height: 90px;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#label-faca-login {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#insira-informacao{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+    text-align: center;
+}
+
+.checkbox-login{
+    width: 85vw;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    bottom: 70px;
+    position: relative;
+}
+
+.checkbox-login input {
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+}
+
+.agrupamento-botoes-login{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 30vh;
+    position: relative;
+    bottom: 60px;
+}
+
+.agrupamento-botoes-login button {
+    width: 85vw;
+    height: 51px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Agrupamento-inputs-CriarConta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+}
+
+.Agrupamento-inputs-CriarConta input{
+    width: calc(100% - 20px); 
+    height: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #BDBDBD;
+    background-color: #F6F6F6;
+    border-style: solid;
+    border-color: #E8E8E8;
+}
+
+
+.checkbox-CriarConta{
+    width: 85vw;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    bottom: 70px;
+    position: relative;
+}
+
+.checkbox-CriarConta input {
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+}
+
+#PrecisaCriarConta{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+    text-align: center;
+}
+
+#crie-sua-conta{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.conteudo-relembreSenha {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E1462;
+}
+
+.conteudo-relembreSenha-agrupamento{
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+}
+
+.relembre-login{
+    width: 400px;
+    height: 90px;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#label-relembre-login {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#relembre-recupere-login{
+    width: 250px;
+    text-align: center;
+    color: #666666;
+    font-weight: 500;
+}
+
+.Agrupamento-inputs-relembreLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+}
+
+.Agrupamento-inputs-relembreLogin input{
+    width: calc(100% - 20px); 
+    height: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #BDBDBD;
+    background-color: #F6F6F6;
+    border-style: solid;
+    border-color: #E8E8E8;
+}
+
+.conteudo-parabens {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E1462;
+}
+
+.conteudo-parabens-agrupamento{
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+}
+
+.agrupamento-botoes-parabens{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 30vh;
+    position: relative;
+    bottom: 20px;
+}
+
+.agrupamento-botoes-parabens button {
+    width: 85vw;
+    height: 51px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#sobrepeso-descricao{
+    width: 270px;
+    text-align: center;
+    color: #666666;
+    font-weight: 500;
 }
